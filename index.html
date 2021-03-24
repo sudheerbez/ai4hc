@@ -69,6 +69,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
+#more {display: none;}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -186,7 +187,7 @@ img {vertical-align: middle;}
         
         <li><a class="smoothscroll" href="#about" title="About">About Company</a></li>
 		<li><a class="smoothscroll" href="#works" title="Works">Research</a></li>
-		<li><a class="smoothscroll" href="#works" title="Works">Solutions</a></li>
+		<li><a class="smoothscroll" href="#solution" title="Works">Solutions</a></li>
         <li>
           <a class="smoothscroll" href="#contact" title="Contact">Contact</a>
         </li>
@@ -204,21 +205,19 @@ img {vertical-align: middle;}
     data-position-y="center">
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
+	
 
     <div class="home-content">
       <div class="row home-content__main">
+	  <h1>AI4HC</h1>
+        <a style="color:white">Reimagine Healthcare!</a>
+		
+
         
 
-        <h1>
-       <br />
-        AI4HC
-		<br/>
-Reimagine Healthcare.
-        </h1>
-
                          <div class="home-content__buttons">
-                        <a href="#works" class="smoothscroll btn btn--stroke">
-                                About Us
+                        <a href="#contact" class="smoothscroll btn btn--stroke">
+                                Contact Us
                         </a>
                 </div> 
       </div>
@@ -238,135 +237,89 @@ Reimagine Healthcare.
   </section>
   <!-- end s-home -->
   
-  
-  <div class="column">
-  <!-- about
-    ================================================== -->
-  <section id="about1" class="s-about target-section">
+  <section id="about" class="s-about target-section">
     <div class="row narrow section-intro has-bottom-sep">
-      <div class="col-full text-center">
-        <h3>About Us</h3>
-        <h1>Health Care AI</h1>
-        <img class="profile-pic" src="images/img.jpeg" alt="Profile Picture" />
+      <div class="col-full">
+        <h1>About Us</h1>
+       
+
+        <p class="lead">
+AI4HC’s mission is to commercialize breakthrough medical technologies predicated on state-of-the-art frameworks in machine learning, computer vision, and autonomous systems. The increase in application of technology to medicine conserves human resources and advances precision medicine, providing increased accuracy in diagnosis and treatment to revolutionize healthcare as we know it. In this vein, we work on providing quality solutions to problems in healthcare, capitalizing on the power of artificial intelligence</p>
       </div>
     </div>
 
-    <div class="row about-content">
-      <div class="col-six tab-full text-center">
-        <h3>A short bio</h3>
-        
-        <br />
-		AI4HC’s mission is to commercialize breakthrough medical technologies predicated on state-of-the-art frameworks in machine learning, computer vision, and autonomous systems. The increase in application of technology to medicine conserves human resources and advances precision medicine, providing increased accuracy in diagnosis and treatment to revolutionize healthcare as we know it. In this vein, we work on providing quality solutions to problems in healthcare, capitalizing on the power of artificial intelligence
-        <hr />
-        <br />
-        <div style="align-content: center" class="row about-content about-content--buttons">
-          <div class="col-six tab-full left">
-            <a href="sudheerbez.com" class="btn btn--primary full-width">View Products</a>
-          </div>
-        </div>
-      </div>
-	  <div class="col-six tab-full right">
-	  <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
-  <img src="images/img1.png" style="width:100%">
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-  <img src="images/img2.png" style="width:100%">
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <img src="images/img3.png" style="width:100%">
-  <div class="text"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 4</div>
-  <img src="images/img1.png" style="width:100%">
-  <div class="text"></div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000);
-}
-</script>
-
-      </div>
-    </div>
 	
     <!-- end about-content -->
+	<img src="images/all.png">
+	</section>
+	<section>
    
 
     
       
   <!-- end about -->
-
+  <div class="column">
   <!-- works
     ================================================== -->
-  <section id="works" class="s-works target-section">
+  <section id="works" class="s-about target-section">
     <div class="row narrow section-intro has-bottom-sep">
-      <div class="col-full">
-        <h1>Research</h1>
+      <div class="col-full text-center">
        
-
-        <p class="lead">With the existence of over 100 types of cancer, and the similarity of its symptoms with a myriad of other diseases, the misdiagnosis of cancer has become a prevalent phenomenon. According to a report by All Can, 4 in 10 patients receive an incorrect diagnosis before a correct one. In India especially, the lack of registered pathologists has put patients in danger through malpractice and misdiagnosis. Although various non-invasive procedures have been used, histopathology studies are still considered to be the gold standard when it comes to cancer detection and analysis.
-In the case of ovarian cancer, which originates in the ovaries and spreads to the abdomen and the pelvis, early detection is difficult but crucial. Ovarian cancer causes the fifth highest cancer-related deaths among women. 1 in 75 women will be diagnosed for it, and 1 in 100 people with ovarian cancer will die. However, if diagnosed early, the treatment tends to be successful 85% of the time. We have been working on deep learning techniques to ensure early detection and treatment, even in the case of cancers that are silent in the early stages, like ovarian cancer. Cancers manifest in different people in different ways, and our approach to treatment procedures reflects that, with an emphasis on personalised medicine
-.</p>
-      </div>
+        <h1>Research</h1>
+         </div>
     </div>
+
+    <div class="row about-content">
+      <div class="col-six tab-full text-center">
+       
+        
+		<h6>With the existence of over 100 types of cancer, and the similarity of its symptoms with a myriad of other diseases, the misdiagnosis of cancer has become a prevalent phenomenon. According to a report by All Can,<span id="dots">...</span><span id="more"> 4 in 10 patients receive an incorrect diagnosis before a correct one. In India especially, the lack of registered pathologists has put patients in danger through malpractice and misdiagnosis. Although various non-invasive procedures have been used, histopathology studies are still considered to be the gold standard when it comes to cancer detection and analysis. In the case of ovarian cancer, which originates in the ovaries and spreads to the abdomen and the pelvis, early detection is difficult but crucial. Ovarian cancer causes the fifth highest cancer-related deaths among women. 1 in 75 women will be diagnosed for it, and 1 in 100 people with ovarian cancer will die. However, if diagnosed early, the treatment tends to be successful 85% of the time. We have been working on deep learning techniques to ensure early detection and treatment, even in the case of cancers that are silent in the early stages, like ovarian cancer. Cancers manifest in different people in different ways, and our approach to treatment procedures reflects that, with an emphasis on personalised medicine  <hr /></span></h6><button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+	  <div class="col-six tab-full right">
+	<img class="center" src="images/res.jpg"</img>
+    </div>
+	</div>
+	</section>
     
     <!-- end masonry -->
-	<section id="works" class="s-works target-section">
+	<section id="solution" class="s-about target-section">
     <div class="row narrow section-intro has-bottom-sep">
-      <div class="col-full">
+      <div class="col-full text-center">
+       
         <h1>Solution</h1>
-        
-
-        <p class="lead">Convolutional neural networks (CNN) is a type of deep learning network that is primarily used to classify images, and applications of CNNs range from self-driving cars to discovery of drugs. Using this technology, we have developed a diagnostic tool that is capable of diagnosing ovarian cancer, identifying what stage the cancer is in, and the mutations associated with it, all within a time period of just five minutes! There is no gatekeeping of medical information, as all the data would be readily available to the patient, and not at the discretion of an oncologist. This would be a valuable tool for pathologists attempting to make accurate decisions.
-Currently, we are working on developing this tool to include various other types of cancer as well. We are also researching the potential personalised therapy recommendations for ovarian cancer. Personalised medicine has just made a foray into treatment options, and our focus is on automating the recommendations process. 
-.</p>
-      </div>
+         </div>
     </div>
-    
+
+    <div class="row about-content">
+      <div class="col-six tab-full text-center">
+       
+        
+		<h6>Convolutional neural networks (CNN) is a type of deep learning network that is primarily used to classify images, and applications of CNNs range from self-driving cars to discovery of drugs. Using this technology,<span id="dots">...</span><span id="more"> we have developed a diagnostic tool that is capable of diagnosing ovarian cancer, identifying what stage the cancer is in, and the mutations associated with it, all within a time period of just five minutes! There is no gatekeeping of medical information, as all the data would be readily available to the patient, and not at the discretion of an oncologist. This would be a valuable tool for pathologists attempting to make accurate decisions. Currently, we are working on developing this tool to include various other types of cancer as well. We are also researching the potential personalised therapy recommendations for ovarian cancer. Personalised medicine has just made a foray into treatment options, and our focus is on automating the recommendations process. .
+	 <hr /></span></h6><button onclick="myFunction()" id="myBtn">Read more</button>
+        <br />
+       
+      </div>
+	  <div class="col-six tab-full right">
+	<img class="center" src="images/sol.png"</img>
+    </div>
+	</div>
+	<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
     <!-- end masonry -->
     
    
@@ -428,8 +381,8 @@ Currently, we are working on developing this tool to include various other types
         </p>
 		<li>
             <a href="https://linkedin.com/company/ai4hc">
-              <i class="im im-linkedin" aria-hidden="true"></i>
-              <span>LinkedIn</span>
+             
+              <span style="color:blue;">LinkedIn</span>
             </a>
           </li>
       </div>
