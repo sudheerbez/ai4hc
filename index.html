@@ -69,6 +69,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
+#more1 {display: none;}	
 #more {display: none;}
 /* Next & previous buttons */
 .prev, .next {
@@ -294,7 +295,7 @@ AI4HC’s mission is to commercialize breakthrough medical technologies predicat
       <div class="col-six tab-full text-center">
        
         
-		<h6>Convolutional neural networks (CNN) is a type of deep learning network that is primarily used to classify images, and applications of CNNs range from self-driving cars to discovery of drugs. Using this technology,<span id="dots1">...</span><span id="more"> we have developed a diagnostic tool that is capable of diagnosing ovarian cancer, identifying what stage the cancer is in, and the mutations associated with it, all within a time period of just five minutes! There is no gatekeeping of medical information, as all the data would be readily available to the patient, and not at the discretion of an oncologist. This would be a valuable tool for pathologists attempting to make accurate decisions. Currently, we are working on developing this tool to include various other types of cancer as well. We are also researching the potential personalised therapy recommendations for ovarian cancer. Personalised medicine has just made a foray into treatment options, and our focus is on automating the recommendations process. .
+		<h6>Convolutional neural networks (CNN) is a type of deep learning network that is primarily used to classify images, and applications of CNNs range from self-driving cars to discovery of drugs. Using this technology,<span id="dots1">...</span><span id="more1"> we have developed a diagnostic tool that is capable of diagnosing ovarian cancer, identifying what stage the cancer is in, and the mutations associated with it, all within a time period of just five minutes! There is no gatekeeping of medical information, as all the data would be readily available to the patient, and not at the discretion of an oncologist. This would be a valuable tool for pathologists attempting to make accurate decisions. Currently, we are working on developing this tool to include various other types of cancer as well. We are also researching the potential personalised therapy recommendations for ovarian cancer. Personalised medicine has just made a foray into treatment options, and our focus is on automating the recommendations process. .
 	 <hr /></span></h6><button onclick="myFunction1()" id="myBtn1">Read more</button>
         <br />
        
@@ -322,8 +323,8 @@ function myFunction() {
 }
 
 		function myFunction1() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
   
 	var btnText = document.getElementById("myBtn1");
 
